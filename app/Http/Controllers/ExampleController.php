@@ -14,5 +14,20 @@ class ExampleController extends Controller
         //
     }
 
+    public function generateKey()
+    {
+        return \Illuminate\Support\Str::random(32);
+    }
+
+    public function fooExample()
+    {
+        return 'Example Request';
+    }
+
+    public function getUser($id)
+    {
+        return 'User ID = ' . $id;
+    }
+
     //
 }
